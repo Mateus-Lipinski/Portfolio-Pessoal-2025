@@ -28,6 +28,38 @@ header a:hover {
     scale: 110%;
 }
 
+#miau {
+    background: none;
+    border: none;
+    color: #F4C2C2;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+}
+
+#miau:hover {
+    scale: 110%;
+}
+
+.falling-image {
+    position: absolute;
+    top: 0; /* Faz a imagem aparecer em cima*/
+    width: 75px;
+    height: 75px;
+    animation: fall 1s ease-in-out forwards;
+}
+
+@keyframes fall {
+    0% {
+    transform: translateY(0);
+    }
+    100% {
+    transform: translateY(100vh);
+    }
+}
+
 main {
     display: flex;
     justify-content: center;

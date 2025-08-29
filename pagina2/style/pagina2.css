@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* background-color: #000; */
+    background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,13 +13,13 @@ header {
 }
 
 header h1 {
-    /* color: white; */
+    color: white;
     margin: 0;
 }
 
 header a {
     margin-left: 64px;
-    /* color: #F4C2C2; */
+    color: #F4C2C2;
     text-decoration: none;
     transition: 0.2s;
 }
@@ -28,15 +28,71 @@ header a:hover {
     scale: 110%;
 }
 
+#miau {
+    background: none;
+    border: none;
+    color: #F4C2C2;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0;
+    padding: 0;
+}
+
+#miau:hover {
+    scale: 110%;
+}
+
+.falling-image {
+    position: absolute;
+    top: 0; /* Faz a imagem aparecer em cima*/
+    width: 75px;
+    height: 75px;
+    animation: fall 1s ease-in-out forwards;
+}
+
+@keyframes fall {
+    0% {
+    transform: translateY(0);
+    }
+    100% {
+    transform: translateY(100vh);
+    }
+}
+
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start; /* Alinha pelo TOPO */
+    flex-wrap: wrap; /* Faz quebrar linha quando não couber */
+    gap: 24px; /* Distância entre os castões */
 }
 
 section {
+    color: white;
     border: 4px solid #F4C2C2;
     border-radius: 8px;
     box-shadow: 0 0 15px 5px #F4C2C2;
+    padding: 16px;
+    width: 300px; /* Largura fixa */
+    min-height: 300px; /* Minimo de altura */
+}
+
+.foto-da-minha-preferencia {
+    background-image: url(/pagina2/img/foto\ da\ minha\ preferencia.jpg);
+    background-size: 300px;
+    width: 300px;
+    height: 225px;
+}
+
+.foto-da-minha-preferencia:hover {
+    background-image: url(/pagina2/img/esqueleto-capoeira.gif);
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: #F4C2C2;
 }
