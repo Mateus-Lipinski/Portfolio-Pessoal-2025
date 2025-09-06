@@ -17,6 +17,14 @@ header h1 {
     margin: 0;
 }
 
+#enigma {
+    transition: 0.2s;
+}
+
+#enigma:hover {
+    color: #F4C2C2;
+}
+
 header a {
     margin-left: 64px;
     color: #F4C2C2;
@@ -43,7 +51,43 @@ header a:hover {
     scale: 110%;
 }
 
-/* TODO / Colocar conteúdo a partir daqui*/
+.falling-image {
+    position: absolute;
+    top: 0; /* Faz a imagem aparecer em cima*/
+    width: 75px;
+    height: 75px;
+    animation: fall 1s ease-in-out forwards;
+}
+
+@keyframes fall {
+    0% {
+    transform: translateY(0);
+    }
+    100% {
+    transform: translateY(100vh);
+    }
+}
+
+#fujao {
+    color: #F4C2C2;
+    font-size: 1em;
+    background: none;
+    border: 4px solid #F4C2C2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s
+}
+
+#oracao {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    text-align: center; /* Centraliza na vertical */
+    top: 0;
+    bottom: 0;
+    width: 100; /* Ocupa largura total */
+    height: 100; /* Ocupa altura total */
+    z-index: 9999; /* Fica acima de tudo */
+}
 
 footer {
     position: fixed;
