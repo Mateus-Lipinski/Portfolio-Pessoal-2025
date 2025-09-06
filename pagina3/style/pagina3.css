@@ -17,6 +17,14 @@ header h1 {
     margin: 0;
 }
 
+#enigma {
+    transition: 0.2s;
+}
+
+#enigma:hover {
+    color: #F4C2C2;
+}
+
 header a {
     margin-left: 64px;
     color: #F4C2C2;
@@ -68,6 +76,17 @@ header a:hover {
     border-radius: 8px;
     cursor: pointer;
     transition: 1s
+}
+
+#oracao {
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    text-align: center; /* Centraliza na vertical */
+    top: 0;
+    bottom: 0;
+    width: 100; /* Ocupa largura total */
+    height: 100; /* Ocupa altura total */
+    z-index: 9999; /* Fica acima de tudo */
 }
 
 footer {

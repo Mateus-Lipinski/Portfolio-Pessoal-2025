@@ -46,3 +46,24 @@ fujao.addEventListener('mouseover', () => { //Código do botão fujão
 fujao.addEventListener('click', () => {
     alert('Parabéns você conseguiu apertar o botão!!! Tente novamente.');
 })
+
+const enigma = document.getElementById('enigma');
+
+enigma.addEventListener('click', () => {
+
+    const resposta = prompt("Quando a preferência se encontra na imagem, o disfarce cai… e o destino revela quem sabe ver além da superfície.");
+    if(resposta == "esqueleto capoeira" || resposta == "Esqueleto capoeira" || resposta == "Esqueleto Capoeira") {
+        const oracao = document.getElementById('oracao'); //Variável da div
+        const img = document.createElement('img'); //Cria a imagem
+        img.src = '../img/Ore para Deus imediatamente.jpg';
+        img.alt = 'Oração';
+        img.style.maxWidth = '1200px'; //Limita o tamanho
+        oracao.appendChild(img); //Coloca a imagem dentro da div
+
+        //Remove depois de 3 segundos
+        setTimeout(() => {
+            oracao.removeChild(img);
+        }, 3000);
+    }
+
+});
