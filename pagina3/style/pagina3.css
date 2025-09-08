@@ -90,9 +90,10 @@ header a:hover {
 }
 
 footer {
-    position: fixed;
+    color: #F4C2C2;
+    padding: 8px;
     text-align: center;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    color: #F4C2C2;
 }

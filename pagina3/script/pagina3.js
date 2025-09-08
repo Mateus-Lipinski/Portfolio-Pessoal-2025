@@ -60,10 +60,14 @@ enigma.addEventListener('click', () => {
         img.style.maxWidth = '1200px'; //Limita o tamanho
         oracao.appendChild(img); //Coloca a imagem dentro da div
 
-        //Remove depois de 3 segundos
+        const audio_enigma = document.createElement('audio')
+        audio_enigma.src = '../audio/fingir.mp3';
+        audio_enigma.play(); 
+
+        //Remove depois de 74 segundos
         setTimeout(() => {
             oracao.removeChild(img);
-        }, 3000);
+        }, 74000);
     }
 
 });
