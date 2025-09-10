@@ -79,14 +79,14 @@ section {
 }
 
 .foto-da-minha-preferencia {
-    background-image: url(/pagina2/img/foto\ da\ minha\ preferencia.jpg);
+    background-image: url(/Portfolio-Pessoal-2025/pagina2/img/foto\ da\ minha\ preferencia.jpg);
     background-size: 300px;
     width: 300px;
     height: 225px;
 }
 
 .foto-da-minha-preferencia:hover {
-    background-image: url(/pagina2/img/esqueleto-capoeira.gif);
+    background-image: url(/Portfolio-Pessoal-2025/pagina2/img/esqueleto-capoeira.gif);
 }
 
 footer {
